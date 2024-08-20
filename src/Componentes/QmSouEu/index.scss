@@ -1,0 +1,71 @@
+
+.QuemSou{
+    border: 1px solid #5a5656;
+    border-radius: 10px;
+    width: 80%;
+    height: 535px;
+    margin: 200px auto;
+    background-color: #1b1b1b; 
+
+    .ImgEDescricao{
+        
+        display: grid;
+        grid-template-columns: 45% 55%;
+
+        .imagem{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .EuP{
+                width: 400px;
+                height: 490px;
+                margin: 20px auto 20px auto;
+                border-radius: 10px;
+                cursor: pointer;
+                opacity: 0.9;
+                
+
+        transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      opacity: 1.5;  
+    }
+            }
+
+            
+        }
+
+        .Eutexto{
+            
+            .texto{
+
+                padding-top: 40px;
+
+                h3{
+                    color: #986DFF;
+                    font-size: 30px;
+                }
+
+                h2{
+                    font-size: 40px;
+                }
+
+                h4{
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+
+                p{
+                    font-size: 20px;
+                    color: #767B84;
+                }
+            }
+        }
+
+    }
+
+}
+

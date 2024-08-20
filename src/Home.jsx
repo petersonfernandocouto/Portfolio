@@ -1,6 +1,7 @@
 import './App.scss'
 import Menu from './Componentes/Menu/Menu'
 import Infor from './Componentes/Informacoes/Info'
+import EU from './Componentes/QmSouEu/EU'
 
 function Home() {
   
@@ -11,7 +12,12 @@ function Home() {
         <Menu />
 
           <br />
+
         <Infor />
+
+
+        <EU />
+        
     </>
   )
 }

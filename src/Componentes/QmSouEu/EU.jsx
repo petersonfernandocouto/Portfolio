@@ -33,9 +33,9 @@ function EU() {
 
                                 <h4>Desenvolvedor Front-End</h4>
 
-                                <br /><br />
+                                
 
-                                <p>Meu nome é Peterson Fernando Couto, estudante de Análise e Desenvolvimento de Sistemas na Universidade Paulista e também de <br />Front-end na escola DNC. Como desenvolvedor, realizo projetos freelancer fornecidos pela DNC, que envolvem reuniões, análises e desenvolvimento técnico. Estou comprometido em aplicar minhas habilidades e conhecimentos para entregar soluções eficazes e inovadoras.</p>
+                                <p>Meu nome é Peterson Fernando Couto, estudante de Análise e Desenvolvimento de Sistemas na Universidade Paulista e também de Front-end na escola DNC. Como desenvolvedor, realizo projetos freelancer fornecidos pela DNC, que envolvem reuniões, análises e desenvolvimento técnico. Estou comprometido em aplicar minhas habilidades e conhecimentos para entregar soluções eficazes e inovadoras.</p>
 
                             </div>
 

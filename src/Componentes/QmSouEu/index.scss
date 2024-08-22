@@ -1,74 +1,66 @@
-
-.QuemSou{
+.QuemSou {
     border: 1px solid #5a5656;
     border-radius: 10px;
     width: 80%;
-
     margin: 200px auto;
-    background-color: #1b1b1b; 
+    background-color: #1b1b1b;
 
-    .ImgEDescricao{
-        
+    .ImgEDescricao {
         display: grid;
         grid-template-columns: 45% 55%;
 
-        .imagem{
-
+        .imagem {
             display: flex;
             justify-content: center;
             align-items: center;
 
-            .EuP{
+            .EuP {
                 width: 400px;
                 height: 490px;
-                margin: 20px auto 20px auto;
+                margin: 20px auto;
                 border-radius: 10px;
                 cursor: pointer;
                 opacity: 0.9;
-                
+                transition: transform 0.3s ease;
 
-        transition: transform 0.3s ease;
-
-    &:hover {
-      transform: scale(1.05);
-      opacity: 1.5;  
-    }
+                &:hover {
+                    transform: scale(1.05);
+                    opacity: 1.5;
+                }
             }
-
-            
         }
 
-        .Eutexto{
-            
-            .texto{
-
+        .Eutexto {
+            .texto {
                 padding-top: 40px;
 
-                h3{
+                h3 {
                     color: #986DFF;
                     font-size: 30px;
                 }
 
-                h2{
+                h2 {
                     font-size: 40px;
                 }
 
-                h4{
+                h4 {
                     font-size: 20px;
                     font-weight: 300;
                 }
 
-                p{
+                p {
                     font-size: 20px;
                     color: #767B84;
+                    margin-top: 30px;
+                    width: 90%;
                 }
             }
 
-            .Contatos{
+            .Contatos {
                 display: flex;
                 gap: 15px;
                 padding-top: 50px;
-                
+
                 a {
                     display: flex;
                     justify-content: center;
@@ -79,7 +71,7 @@
                     width: 70px;
                     height: 70px;
 
-                    &:hover{
+                    &:hover {
                         border: 2px solid #986DFF;
                     }
 
@@ -87,23 +79,69 @@
                         fill: #986DFF;
                         font-size: 30px;
                         cursor: pointer;
-
                     }
-                    
                 }
             }
         }
-
     }
 
-}
+    @media (max-width: 428px) {
+        margin: 50px auto;
 
-@media (max-width: 428px){
+        .ImgEDescricao {
+            display: block;
+            
+            .imagem {
+                .EuP {
+                    border-radius: 30px;
+                    padding-top: 20px;
+                    display: block;
+                    width: 85%;
+                    height: 350px;
+                    margin: 0 auto 20px;
+                }
+            }
 
-    
-    .EuP{
-        display: none;
+            .Eutexto {
+                padding-left: 10px;
+
+                .texto {
+                    padding-top: 5px;
+
+                    h3 {
+                        font-size: 25px;
+                    }
+
+                    h2 {
+                        font-size: 30px;
+                    }
+
+                    h4 {
+                        font-size: 19px;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-size: 15px;
+                        margin-top: 25px;
+                    }
+                }
+
+                .Contatos {
+                    gap: 35px;
+                    padding-bottom: 10px;
+                    padding-left: 5px;
+
+                    a {
+                        width: 50px;
+                        height: 50px;
+
+                        svg {
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+        }
     }
-
 }
-

@@ -1,0 +1,70 @@
+section{
+
+    background-color: #1b1b1b;
+
+    .BotaoTexto{
+        display: grid;
+        grid-template-columns: 25% 75%;
+
+    
+        .secButton{
+            
+            margin-top: 50px;
+            margin-left: 50px;
+            background-color: #1b1b1b;
+    
+            button{
+
+                display: block;
+                color: white;
+                background-color: #111111;
+                font-size: 25px;
+                width: 100%;
+                cursor: pointer;
+                border: none;
+                height: 100px;
+
+                &:hover{
+                    color: #986DFF;
+                    border-left: 1px solid #986DFF;
+                }
+            }
+        }
+
+        .expeDes{
+
+            border: 1px solid white;
+            width: 70%;
+            margin-top: 50px;
+            margin-left: 40px;
+            padding-left: 20px;
+            padding-top: 20px;
+
+            .tituloData{
+                display: flex;
+                justify-content: space-between;
+
+                h2{
+                    font-weight: 500;
+                }
+                
+                p{
+                    padding-right: 30px;
+                }
+            }
+
+            h3{
+                color: #986DFF;
+                padding-top: 30px;
+                padding-bottom: 30px;;
+            }
+
+            p{
+                color: #767B84;
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+

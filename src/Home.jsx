@@ -2,6 +2,8 @@ import './App.scss'
 import Menu from './Componentes/Menu/Menu'
 import Infor from './Componentes/Informacoes/Info'
 import EU from './Componentes/QmSouEu/EU'
+import Provider from './Contexto/Provider'
+import Experiencias from './Componentes/Experiencia/Expe'
 
 function Home() {
   
@@ -17,6 +19,13 @@ function Home() {
 
 
         <EU />
+
+          <Provider>
+
+
+                <Experiencias />
+
+          </Provider>
         
     </>
   )

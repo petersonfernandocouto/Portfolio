@@ -3,7 +3,7 @@
     border: 1px solid #5a5656;
     border-radius: 10px;
     width: 80%;
-    height: 535px;
+
     margin: 200px auto;
     background-color: #1b1b1b; 
 
@@ -63,8 +63,46 @@
                     color: #767B84;
                 }
             }
+
+            .Contatos{
+                display: flex;
+                gap: 15px;
+                padding-top: 50px;
+                
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #5a5656;
+                    border-radius: 10px;
+                    background-color: rgb(17,17,17);
+                    width: 70px;
+                    height: 70px;
+
+                    &:hover{
+                        border: 2px solid #986DFF;
+                    }
+
+                    svg {
+                        fill: #986DFF;
+                        font-size: 30px;
+                        cursor: pointer;
+
+                    }
+                    
+                }
+            }
         }
 
+    }
+
+}
+
+@media (max-width: 428px){
+
+    
+    .EuP{
+        display: none;
     }
 
 }

@@ -1,6 +1,13 @@
 section{
 
     background-color: #1b1b1b;
+    margin-bottom: 20px;
+
+    h1{
+        font-size: 40px;
+        padding-top: 40px;
+        padding-left: 50px;
+    }
 
     .BotaoTexto{
         display: grid;
@@ -11,6 +18,7 @@ section{
             
             margin-top: 50px;
             margin-left: 50px;
+            margin-bottom: 30px;
             background-color: #1b1b1b;
     
             button{
@@ -33,7 +41,6 @@ section{
 
         .expeDes{
 
-            border: 1px solid white;
             width: 70%;
             margin-top: 50px;
             margin-left: 40px;
@@ -46,6 +53,7 @@ section{
 
                 h2{
                     font-weight: 500;
+                    font-size: 30px;
                 }
                 
                 p{
@@ -62,6 +70,9 @@ section{
             p{
                 color: #767B84;
                 font-size: 20px;
+                overflow-wrap: break-word;
+                word-break: break-word; 
+                white-space: normal;
             }
         }
     }

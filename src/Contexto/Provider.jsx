@@ -6,12 +6,16 @@ import PropTypes from "prop-types"; // estava dando erro na props de Provider e 
 
 function Provider({ children }) {
 
+    {/* --------------------------------------------Abaixo Logica do Documento Expe.jsx ------------------------------------ */}
+
     const [experienciaAtual, setExperienciaAtual] = useState(Produtos_Mock[0]); // Irei iniciar como SubGerente, por este motivo o numero iniciar como "0" isso corresponde ao id "1" que está na API
 
     const alterarExperiencia = (id) => {
         const novaExperiencia = Produtos_Mock.find(exp => exp.id === id);
         setExperienciaAtual(novaExperiencia);
     }; // aqui estamos dizendo que alterarExperiencia recebe um id. novaExperiencia recebe o objeto correspondente ao id no arquivo Produtos_mock (API). O find tem a função de encontrar o objeto com o "id" especificado. "exp" é um nome que damos (pode ser substituído) e ao comparar exp.id com o "id", encontramos o objeto correspondente na API.
+
+    {/* --------------------------------------------Acima Logica do Documento Expe.jsx ------------------------------------ */}
 
 
     const DescricaoExperiencia = {

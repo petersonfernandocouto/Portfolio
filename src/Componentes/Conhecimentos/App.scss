@@ -1,0 +1,49 @@
+.Conhecimento {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .Exibicao {
+        border: 1px solid white;
+        padding-top: 80px;
+        padding-left: 50px;
+
+        p {
+            padding-top: 40px;
+            color: #767B84;
+            font-size: 20px;
+            overflow-wrap: break-word;
+            word-break: break-word;
+            white-space: normal;
+        }
+    }
+
+    .ButtonIco {
+        border: 1px solid white;
+        padding-top: 40px;
+
+        .LinhaIco {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+
+            button {
+                background-color: #1b1b1b;
+                border: 1px solid #5A5656;
+                border-radius: 10px;
+                width: 120px;
+                height: 130px;
+                margin: 10px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 50px;
+
+                &:hover{
+                    border: 1px solid #986DFF;
+                    
+                }
+            }
+        }
+    }
+}

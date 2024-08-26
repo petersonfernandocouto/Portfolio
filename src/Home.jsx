@@ -4,6 +4,7 @@ import Infor from './Componentes/Informacoes/Info'
 import EU from './Componentes/QmSouEu/EU'
 import Provider from './Contexto/Provider'
 import Experiencias from './Componentes/Experiencia/Expe'
+import Conhecimentos from './Componentes/Conhecimentos/Conhecimentos'
 
 function Home() {
   
@@ -24,6 +25,10 @@ function Home() {
 
 
                 <Experiencias />
+
+                <br />
+                
+                <Conhecimentos />
 
           </Provider>
         

@@ -3,11 +3,11 @@
     grid-template-columns: 50% 50%;
 
     .Exibicao {
-        border: 1px solid white;
         padding-top: 80px;
         padding-left: 50px;
 
         p {
+            width: 85%;
             padding-top: 40px;
             color: #767B84;
             font-size: 20px;
@@ -18,30 +18,36 @@
     }
 
     .ButtonIco {
-        border: 1px solid white;
         padding-top: 40px;
 
         .LinhaIco {
             display: flex;
             justify-content: center;
-            gap: 50px;
+            gap: 80px;
             margin-top: 20px;
 
             button {
+
                 background-color: #1b1b1b;
                 border: 1px solid #5A5656;
                 border-radius: 10px;
-                width: 120px;
-                height: 130px;
+                max-width: 140px;
+                width: 95%;
+                height: 150px;
                 margin: 10px 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 50px;
+                font-size: 60px;
+                transition: border-color 1.0s ease;
 
-                &:hover{
-                    border: 1px solid #986DFF;
+                &:hover{                 
+                    border: 2px solid #986DFF;
                     
+                }
+
+                svg {
+                    fill: #986DFF;
                 }
             }
         }

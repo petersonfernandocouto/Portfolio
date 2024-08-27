@@ -1,6 +1,7 @@
 import Contexto from "./Context";
 import { useState } from "react";
 import { Produtos_Mock } from '../API/API' //importação da API
+import { Conhecimentos_Mock } from "../API/APIConhecimentos";
 
 import PropTypes from "prop-types"; // estava dando erro na props de Provider e então eu instalei ("import PropTypes from "prop-types";") no terminal, isso ajuda a retirar o erro e consegue evitar problemas no futuro
 
@@ -18,10 +19,31 @@ function Provider({ children }) {
     {/* --------------------------------------------Acima Logica do Documento Expe.jsx ------------------------------------ */}
 
 
+    {/* --------------------------------------------Abaixo Logica do Documento Conhecimento.jsx ------------------------------------ */}
+    
+            const [ ConhecimentoAtual, setConhecimentoAtual ] = useState( Conhecimentos_Mock[0] );
+
+            const alterarConhecimento = (id) => {
+
+                const novoConhecimento = Conhecimentos_Mock.find(Conhe => Conhe.id === id);
+                setConhecimentoAtual(novoConhecimento)
+            }
+
+    {/* --------------------------------------------Acima Logica do Documento Conhecimento.jsx ------------------------------------ */}        
+
+
     const DescricaoExperiencia = {
+
         experienciaAtual,
         alterarExperiencia,
+
+        ConhecimentoAtual,
+        alterarConhecimento,
+
+
     };
+
+
 
     return (
         <Contexto.Provider value={DescricaoExperiencia}>

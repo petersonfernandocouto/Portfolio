@@ -8,9 +8,12 @@ import { DiNodejs } from "react-icons/di"; //Node js
 import { RiNextjsFill } from "react-icons/ri"; //Next js
 import { SiTypescript } from "react-icons/si"; //Typescript
 import { RiVuejsFill } from "react-icons/ri"; //Vue
+import { useContext } from 'react';
+import Contexto from '../../Contexto/Context';
 
 function Conhecimentos() {
 
+    const { ConhecimentoAtual, alterarConhecimento } = useContext(Contexto);
 
     return (
 
@@ -20,7 +23,7 @@ function Conhecimentos() {
             <div className='Exibicao'>
 
                 <h1>Conhecimento</h1>
-                <p>Passe o mouse em cima para ler</p>
+                <p>{ConhecimentoAtual.Descricao}</p>
 
             </div>
 
@@ -28,23 +31,23 @@ function Conhecimentos() {
 
                 <div className='LinhaIco'>
 
-                    <button> <FaHtml5 /> </button>
-                    <button> <FaCss3Alt /> </button>
-                    <button> <FaSquareJs /> </button>
+                    <button onMouseOver={() => alterarConhecimento(2)} onMouseOut={() => alterarConhecimento(1)}> <FaHtml5 /> </button>
+                    <button onMouseOver={() => alterarConhecimento(3)} onMouseOut={() => alterarConhecimento(1)}> <FaCss3Alt /> </button>
+                    <button onMouseOver={() => alterarConhecimento(4)} onMouseOut={() => alterarConhecimento(1)}> <FaSquareJs /> </button>
 
                 </div>
 
 
                 <div className='LinhaIco'>
-                    <button> <FaReact /> </button>
-                    <button> <RiNextjsFill /> </button>
-                    <button> <SiTypescript /> </button>
+                    <button onMouseOver={() => alterarConhecimento(5)} onMouseOut={() => alterarConhecimento(1)}> <FaReact /> </button>
+                    <button onMouseOver={() => alterarConhecimento(6)} onMouseOut={() => alterarConhecimento(1)}> <RiNextjsFill /> </button>
+                    <button onMouseOver={() => alterarConhecimento(7)} onMouseOut={() => alterarConhecimento(1)}> <SiTypescript /> </button>
                 </div>
 
                 <div className='LinhaIco'>
-                    <button> <RiVuejsFill /> </button>
-                    <button> <FaSass /> </button>
-                    <button> <DiNodejs /> </button>
+                    <button onMouseOver={() => alterarConhecimento(8)} onMouseOut={() => alterarConhecimento(1)}> <RiVuejsFill /> </button>
+                    <button onMouseOver={() => alterarConhecimento(9)} onMouseOut={() => alterarConhecimento(1)}> <FaSass /> </button>
+                    <button onMouseOver={() => alterarConhecimento(10)} onMouseOut={() => alterarConhecimento(1)}> <DiNodejs /> </button>
                 </div>
                 
 

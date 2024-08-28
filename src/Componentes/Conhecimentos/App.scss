@@ -53,3 +53,37 @@
         }
     }
 }
+
+
+@media (max-width: 428px) {
+
+    .Conhecimento {
+        display: block;
+    
+        .Exibicao {
+            padding-top: 5px;
+    
+            p {
+                display: none;
+            }
+        }
+    
+        .ButtonIco {
+    
+            .LinhaIco {
+                margin-top: 20px;
+                gap: 40px;
+    
+                button {
+                    max-width: 80px;
+                    width: 95%;
+                    height: 80px;
+                    margin: 0px;
+                    font-size: 40px;
+    
+                }
+            }
+        }
+    }
+
+}

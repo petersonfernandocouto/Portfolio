@@ -5,6 +5,7 @@ import EU from './Componentes/QmSouEu/EU'
 import Provider from './Contexto/Provider'
 import Experiencias from './Componentes/Experiencia/Expe'
 import Conhecimentos from './Componentes/Conhecimentos/Conhecimentos'
+import Certificado from './Componentes/Certificados/Certificado'
 
 function Home() {
   
@@ -31,6 +32,10 @@ function Home() {
                 <Conhecimentos />
 
           </Provider>
+          
+          <br />
+
+        <Certificado />  
         
     </>
   )

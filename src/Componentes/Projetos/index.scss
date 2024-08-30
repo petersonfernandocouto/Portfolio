@@ -1,0 +1,104 @@
+.Projetos {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .Container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+        .Pai {
+            margin-top: 50px;
+            border: 1px solid #5a5656;
+            border-radius: 10px;
+            background-color: #1B1B1B;
+            max-width: 380px;
+            width: 95%;
+            height: 330px;
+            padding: 0 20px 10px;
+            display: flex;
+            flex-direction: column;
+
+            .ProjetoTitulo {
+                h2 {
+                    font-size: 35px;
+                }
+
+                p {
+                    margin-top: 15px;
+                    color: #767B84;
+                    font-size: 18px;
+                }
+            }
+
+            .Icone {
+                margin-top: 15px;
+            }
+
+            svg {
+                fill: #986DFF;
+                font-size: 45px;
+            }
+
+            a {
+                margin-top: auto;
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+            }
+
+            button {
+                background-color: #1B1B1B;
+                color: #767B84;
+                border: none;
+                cursor: pointer;
+                font-size: 18px;
+                padding: 10px 20px;
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+
+                &:hover{
+                    color: #986DFF;
+                }
+
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 2px;
+                    background-color: #986DFF;
+                    width: 0;
+                    transition: width 0.5s ease-in-out;
+                }
+
+                &:hover:before {
+                    width: 100%;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #986DFF;
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
+                }
+
+                &:hover:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

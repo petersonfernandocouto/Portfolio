@@ -1,0 +1,28 @@
+.FooterInformation{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1B1B1B;
+    height: 80px;
+
+   p{
+    font-size: 20px;
+   }
+}
+
+
+@media (max-width: 428px){
+
+    .FooterInformation{
+
+        p{
+            font-size: 15px;
+        }
+
+           .Copyright{
+            display: none;
+           }
+    }
+}

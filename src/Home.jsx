@@ -7,6 +7,7 @@ import Experiencias from './Componentes/Experiencia/Expe'
 import Conhecimentos from './Componentes/Conhecimentos/Conhecimentos'
 import Certificado from './Componentes/Certificados/Certificado'
 import Projetos from './Componentes/Projetos/Projetos'
+import Footer from './Componentes/Footer/Footer'
 
 function Home() {
   
@@ -39,6 +40,10 @@ function Home() {
         <Certificado />  
 
         <Projetos />
+
+        <br />
+        
+        <Footer />
         
     </>
   )

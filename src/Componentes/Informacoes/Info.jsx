@@ -11,7 +11,7 @@ function Infor() {
 
             <div className='Apresentacao'>
 
-                <h1>Com 27 anos, apaixonado por criar projetos utilizando as tecnologias de <strong>Front-end</strong>. Meu foco é entregar soluções de qualidade que realmente fazem a diferença.</h1>
+                <h1>Tenho 27 anos, apaixonado por criar projetos utilizando as tecnologias de <strong>Front-end</strong>. Meu foco é entregar soluções de qualidade que realmente fazem a diferença.</h1>
 
                 <h3>Uma mistura de Design, Desenvolvimento Frontend e habilidade profissional que vão destacar seu produto no mercado</h3>
 

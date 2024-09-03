@@ -2,7 +2,6 @@
   position: fixed;
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   background-color: rgb(17,17,17);
@@ -11,38 +10,19 @@
     width: 220px;
     padding: 50px 0 0 120px;
   }
+  
+}
 
-  .Icone {
-    padding-top: 40px;
+@media (max-width: 428px) {
+  .Menu{
 
-    .whatsapp-icon {
-      transition: fill 0.8s ease;
-      fill: white;
-      font-size: 35px;
-      padding-right: 130px;
-      cursor: pointer;
-
-      &:hover {
-        fill: #986DFF;
-      }
-    }
-  }
-
-  @media (max-width: 428px) {
     .Logo {
       width: 220px;
       padding: 50px 0 0 15px;
       font-size: 25px;
       font-weight: 500;
     }
-
-    .Icone {
-
-      padding-top: 45px;
-      .whatsapp-icon {
-        padding-right: 20px;
-        font-size: 25px;
-      }
+  
     }
+    
   }
-}

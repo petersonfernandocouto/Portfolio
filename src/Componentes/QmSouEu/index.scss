@@ -31,6 +31,11 @@
         }
 
         .Eutexto {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+
             .texto {
                 padding-top: 40px;
 
@@ -60,6 +65,7 @@
                 display: flex;
                 gap: 15px;
                 padding-top: 50px;
+                margin-bottom: 15px;
 
                 a {
                     display: flex;
@@ -104,6 +110,10 @@
 
             .Eutexto {
                 padding-left: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; 
+                height: 100%;
 
                 .texto {
                     padding-top: 5px;
@@ -131,6 +141,7 @@
                     gap: 35px;
                     padding-bottom: 10px;
                     padding-left: 5px;
+                    margin-bottom: 20px; 
 
                     a {
                         width: 50px;

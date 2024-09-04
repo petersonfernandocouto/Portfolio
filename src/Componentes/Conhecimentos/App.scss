@@ -3,87 +3,152 @@
     grid-template-columns: 50% 50%;
 
     .Exibicao {
-        padding-top: 80px;
-        padding-left: 50px;
+      padding-top: 80px;
+      padding-left: 50px;
 
-        p {
-            width: 85%;
-            padding-top: 40px;
-            color: #767B84;
-            font-size: 20px;
-            overflow-wrap: break-word;
-            word-break: break-word;
-            white-space: normal;
-        }
+      p {
+        width: 85%;
+        padding-top: 40px;
+        color: #767B84;
+        font-size: 20px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        white-space: normal;
+      }
     }
 
     .ButtonIco {
-        padding-top: 40px;
+      padding-top: 40px;
 
-        .LinhaIco {
-            display: flex;
-            justify-content: center;
-            gap: 80px;
-            margin-top: 20px;
+      .LinhaIco {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        margin-top: 20px;
 
-            button {
+        button {
+          background-color: #1b1b1b;
+          border: 1px solid #5A5656;
+          border-radius: 10px;
+          max-width: 140px;
+          width: 95%;
+          height: 150px;
+          margin: 10px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 60px;
+          transition: border-color 1.0s ease;
 
-                background-color: #1b1b1b;
-                border: 1px solid #5A5656;
-                border-radius: 10px;
-                max-width: 140px;
-                width: 95%;
-                height: 150px;
-                margin: 10px 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 60px;
-                transition: border-color 1.0s ease;
+          &:hover {
+            border: 2px solid #986DFF;
+          }
 
-                &:hover{                 
-                    border: 2px solid #986DFF;
-                    
-                }
+          svg {
+            fill: #986DFF;
+          }
 
-                svg {
-                    fill: #986DFF;
-                }
-            }
+          // Adicionando as classes de animação
+          &.section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+          }
+
+          &.fadeIn {
+            opacity: 1;
+            transform: translateY(0);
+          }
+
+          &.fadeInLeft {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+          }
+
+          &.fromLeft {
+            transform: translateX(-100%);
+          }
+
+          // Classe com delay para o segundo botão em diante
+          &.fadeInLeft2 {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity 1.5s ease-out 1s, transform 1.5s ease-out 1s; // Adicionando um delay de 1 segundo
+          }
+
+          &.fadeInLeft3 {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity 1.5s ease-out 2s, transform 2.5s ease-out 2s;
+          }
+
+          &.fadeInLeft4 {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity 1.5s ease-out 3s, transform 3s ease-out 2s;
+          }
+
+          &.fadeInLeft5 {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity 1.5s ease-out 4s, transform 4s ease-out 2s;
+          }
+
+          &.fadeInLeft6 {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity 1.5s ease-out 5s, transform 5s ease-out 2s;
+          }
+
+          &.fadeInLeft7 {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity 1.5s ease-out 6s, transform 6s ease-out 2s;
+          }
+
+          &.fadeInLeft8 {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity 1.5s ease-out 7s, transform 7s ease-out 2s;
+          }
+
+          &.fadeInLeft9 {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity 1.5s ease-out 8s, transform 8s ease-out 2s;
+          }
+
         }
+      }
     }
 }
 
-
 @media (max-width: 428px) {
-
     .Conhecimento {
-        display: block;
-    
-        .Exibicao {
-            padding-top: 5px;
-    
-            p {
-                display: none;
-            }
-        }
-    
-        .ButtonIco {
-    
-            .LinhaIco {
-                margin-top: 20px;
-                gap: 40px;
-    
-                button {
-                    max-width: 80px;
-                    width: 95%;
-                    height: 80px;
-                    margin: 0px;
-                    font-size: 40px;
-    
-                }
-            }
-        }
-    }
+      display: block;
 
+      .Exibicao {
+        padding-top: 5px;
+
+        p {
+          display: none;
+        }
+      }
+
+      .ButtonIco {
+        .LinhaIco {
+          margin-top: 20px;
+          gap: 40px;
+
+          button {
+            max-width: 80px;
+            width: 95%;
+            height: 80px;
+            margin: 0px;
+            font-size: 40px;
+          }
+        }
+      }
+    }
 }

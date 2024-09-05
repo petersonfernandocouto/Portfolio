@@ -1,4 +1,5 @@
 import './index.scss';
+import '../../MediaQueries/certificado.scss'
 import { FaCrown } from "react-icons/fa6";
 import { MdOutlineWork } from "react-icons/md";
 import { PiCertificateBold } from "react-icons/pi";

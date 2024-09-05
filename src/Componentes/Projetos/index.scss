@@ -1,10 +1,12 @@
+@use '../../Sass/SASS.scss' as *;
+
 .Projetos {
     padding-top: 50px;
     padding-bottom: 50px;
 
     h1 {
         text-align: center;
-        font-size: 40px;
+        @include Titulo;
     }
 
     .Container {
@@ -41,7 +43,7 @@
             }
 
             svg {
-                fill: #986DFF;
+                @include icone;
                 font-size: 45px;
             }
 
@@ -100,50 +102,4 @@
             }
         }
     }
-}
-
-
-@media (max-width: 428px) {
-
-
-    .Projetos {
-    
-        h1 {
-            text-align: center;
-            font-size: 30px;
-        }
-    
-        .Container {
-            display: block;
-    
-            .Pai {
-                margin: 20px auto;
-                max-width: 300px;
-                width: 95%;
-                height: auto;
-    
-                .ProjetoTitulo {
-                    h2 {
-                        font-size: 22px;
-                    }
-    
-                    p {
-                        font-size: 15px;
-                    }
-                }
-    
-                svg {
-                    font-size: 35px;
-                }
-
-    
-                button {
-                    font-size: 15px;
-                    padding: 10px 20px;
-    
-                }
-            }
-        }
-    }
-
 }

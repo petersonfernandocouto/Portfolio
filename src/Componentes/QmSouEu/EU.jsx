@@ -1,4 +1,5 @@
 import './index.scss';
+import '../../MediaQueries/eu.scss'
 import EuP from '../../../public/IMG/EuP.jpg'
 import { BsWhatsapp } from "react-icons/bs";
 import { CiLinkedin } from "react-icons/ci";
@@ -64,9 +65,11 @@ function EU() {
                     </div>
 
                     <div className='Contatos'>
+
                         <a href='https://WA.me/5519991955915' target='_blank' rel='noopener noreferrer'>
                             <BsWhatsapp />
                         </a>
+                        
                         <a href='https://www.linkedin.com/in/peterson-fernando-6b3709133/' target='_blank' rel='noopener noreferrer'>
                             <CiLinkedin />
                         </a>

@@ -1,4 +1,5 @@
 import './index.scss';
+import '../../MediaQueries/projetos.scss'
 import { BiStoreAlt } from "react-icons/bi";
 import { BsBag } from "react-icons/bs";
 import { VscTasklist } from "react-icons/vsc";

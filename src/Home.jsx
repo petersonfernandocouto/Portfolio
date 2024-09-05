@@ -19,8 +19,8 @@ function Home() {
   const { ref: euRef, inView: euInView } = useInView({ triggerOnce: false });
   const { ref: experienciasRef, inView: experienciasInView } = useInView({ triggerOnce: true });
   const { ref: conhecimentosRef, inView: conhecimentosInView } = useInView({ triggerOnce: true });
-  const { ref: conquistasRef, inView: conquistasInView } = useInView({ triggerOnce: true });
-  const { ref: projetosRef, inView: projetosInView } = useInView({ triggerOnce: true });
+  const { ref: conquistasRef, inView: conquistasInView } = useInView({ triggerOnce: false });
+  const { ref: projetosRef, inView: projetosInView } = useInView({ triggerOnce: false });
 
   return (
     <>

@@ -1,4 +1,5 @@
 import './App.scss';
+import '../../MediaQueries/conhecimentos.scss'
 import { FaHtml5 } from "react-icons/fa"; //HTML
 import { FaCss3Alt } from "react-icons/fa"; // CSS
 import { FaSquareJs } from "react-icons/fa6"; // JS

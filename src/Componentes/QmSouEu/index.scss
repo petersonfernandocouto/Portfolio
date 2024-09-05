@@ -1,3 +1,5 @@
+@use '../../Sass/SASS.scss' as *;
+
 .QuemSou {
     border: 1px solid #5a5656;
     border-radius: 10px;
@@ -45,7 +47,7 @@
                 }
 
                 h2 {
-                    font-size: 40px;
+                    @include Titulo;
                 }
 
                 h4 {
@@ -54,8 +56,7 @@
                 }
 
                 p {
-                    font-size: 20px;
-                    color: #767B84;
+                    @include pCinza;
                     margin-top: 30px;
                     width: 90%;
                 }
@@ -82,7 +83,7 @@
                     }
 
                     svg {
-                        fill: #986DFF;
+                        @include icone;
                         font-size: 30px;
                         cursor: pointer;
                     }
@@ -91,68 +92,4 @@
         }
     }
 
-    @media (max-width: 428px) {
-        margin: 50px auto;
-
-        .ImgEDescricao {
-            display: block;
-            
-            .imagem {
-                .EuP {
-                    border-radius: 30px;
-                    padding-top: 20px;
-                    display: block;
-                    width: 85%;
-                    height: 350px;
-                    margin: 0 auto 20px;
-                }
-            }
-
-            .Eutexto {
-                padding-left: 10px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between; 
-                height: 100%;
-
-                .texto {
-                    padding-top: 5px;
-
-                    h3 {
-                        font-size: 25px;
-                    }
-
-                    h2 {
-                        font-size: 30px;
-                    }
-
-                    h4 {
-                        font-size: 19px;
-                    }
-
-                    p {
-                        text-align: center;
-                        font-size: 15px;
-                        margin-top: 25px;
-                    }
-                }
-
-                .Contatos {
-                    gap: 35px;
-                    padding-bottom: 10px;
-                    padding-left: 5px;
-                    margin-bottom: 20px; 
-
-                    a {
-                        width: 50px;
-                        height: 50px;
-
-                        svg {
-                            font-size: 28px;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }

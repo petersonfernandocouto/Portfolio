@@ -1,4 +1,5 @@
 import './App.scss';
+import '../../MediaQueries/Experiencia.scss'
 import { useContext } from 'react';
 import Contexto from '../../Contexto/Context'; // Importando o contexto
 

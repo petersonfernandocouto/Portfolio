@@ -1,0 +1,44 @@
+@media (max-width: 428px) {
+
+
+    .Projetos {
+    
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+    
+        .Container {
+            display: block;
+    
+            .Pai {
+                margin: 20px auto;
+                max-width: 300px;
+                width: 95%;
+                height: auto;
+    
+                .ProjetoTitulo {
+                    h2 {
+                        font-size: 22px;
+                    }
+    
+                    p {
+                        font-size: 15px;
+                    }
+                }
+    
+                svg {
+                    font-size: 35px;
+                }
+
+    
+                button {
+                    font-size: 15px;
+                    padding: 10px 20px;
+    
+                }
+            }
+        }
+    }
+
+}

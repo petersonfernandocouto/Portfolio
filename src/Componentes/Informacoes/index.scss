@@ -1,3 +1,5 @@
+@use '../../Sass/SASS.scss' as *;
+
 .InforContainer {
     margin-top: 150px;
     display: grid;
@@ -8,7 +10,7 @@
       padding-left: 120px;
   
       h1 {
-        font-size: 35px;
+        @include Titulo;
         font-weight: 300;
       }
   
@@ -19,8 +21,7 @@
       h3 {
         padding-top: 50px;
         padding-bottom: 50px;
-        font-size: 19px;
-        color: #767B84;
+        @include pCinza;
         font-weight: 300;
       }
   
@@ -61,38 +62,3 @@
     }
 
   }
-
-  @media (max-width: 428px) {
-    
-    .InforContainer{
-
-        margin-top:120px;
-
-        .Apresentacao{
-
-            h1{
-                font-size: 20px;
-                
-            }
-
-            h3{
-                font-size: 17px;
-            }
-
-            .Botao{
-                width: 230px;
-                font-size: 20px;
-            }
-        }
-        
-      
-        .img {
-          display: none; 
-        }
-
-
-
-    }
-    
-  }
-  

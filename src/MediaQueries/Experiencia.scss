@@ -1,0 +1,52 @@
+@media (max-width: 428px) {
+
+    section{   
+        h1{
+            font-size: 30px;
+        }
+
+        .BotaoTexto{
+            display: block;
+
+            .secButton{
+                width: 75%;
+
+                button{
+                    font-size: 20px;
+                    height: 80px;
+                }
+
+            }
+
+            .expeDes{
+
+                .tituloData{
+                    display: block;
+
+                    h2{
+                        font-size: 25px;
+                    }
+
+                    p{
+                        font-size: 17px;
+                    }
+                }
+
+                h3{
+                    font-size: 22px;
+                    padding-top: 0px;
+                }
+
+                p{
+                    font-size: 18px;
+                    padding-bottom: 25px;
+                }
+            }
+
+        }
+
+
+
+    }
+
+}
